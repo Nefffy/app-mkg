@@ -103,6 +103,12 @@ export const exercises = [
             content:
               "Hierbei sollten Sie eine rudimentäre Bedarfsanalyse - definieren Sie Ihre Zielsetzung und Zielgruppe - durchführen. Welche Gründe sprechen für das Vorhaben und rechtfertigen den Aufwand?",
           },
+          {
+            id: 2,
+            type: "text",
+            content:
+              "Sie können in derselben Gruppenaufteilung wie für Aufgabe 1a) arbeiten  oder Sie gruppieren sich für diese Aufgabenstellung neu. Beachten Sie, dass Sie langfristig eine feste Gruppenaufteilung benötigen werden. Sie werden die Projektarbeiten in der gleichen Aufteilung durchführen.",
+          }
         ],
       },
       {
@@ -114,10 +120,23 @@ export const exercises = [
             id: 0,
             type: "text",
             content:
-              "Erstellen Sie einen Fragebogen für die Zielgruppenanalyse aus dem Konzeptionsprozesses aus der vorherigen Aufgabe. Der Fragebogen sollte insgesamt 10 Fragen beinhalten, die Sie jeweils den Teilgruppen der Zielgruppe zuordnen. Begründen Sie auch die Wahl Ihrer Fragestellung.",
+              "Erstellen Sie einen Fragebogen für die Zielgruppenanalyse aus dem Konzeptionsprozess der vorherigen Aufgabe. Der Fragebogen sollte insgesamt 10 Fragen beinhalten, die Sie jeweils den Teilgruppen der Zielgruppe zuordnen. Begründen Sie auch die Wahl Ihrer Fragestellung.",
           },
         ],
       },
+      {
+        id: 3, //use in JSX as key
+        title: "Bedarfsanalyse",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Verwenden Sie Ihren Fragebogen, um die andere Gruppe als Testgruppe für Ihre Analysephase zu verwenden. Wie schätzen Sie Ihr Vorhaben nach Ihrer Auswertung ein?",
+          },
+        ],
+      }
     ],
   }
 ];
