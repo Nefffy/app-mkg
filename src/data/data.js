@@ -35,7 +35,7 @@ export const exercises = [
             type: "text",
             content: "Now, navigate to the project folder typing",
           },
-          { id: 5, type: "code", content: "cd exercises_mkg" },
+          { id: 5, type: "code", content: "cd app-mkg" },
           {
             id: 6,
             type: "text",
