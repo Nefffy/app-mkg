@@ -110,7 +110,7 @@ function App() {
           Please note, that this app is still a work in progress. So if you
           don`t like something, feel free to optimize it.
         </p>
-        <p>Suprise: some exercises will adress gaps within this version.</p>
+        <p>Surprise: some exercises will adress gaps within this version.</p>
       </header>
       <main>{listItems}</main>
     </div>
