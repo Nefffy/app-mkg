@@ -138,6 +138,125 @@ export const exercises = [
         ],
       }
     ],
+  },
+  {
+    id: 2, //use in JSX as key
+    title: "Introduction to the Adobe Creative Cloud",
+    subtitle:
+      "2-weeks for discussion and preparation (with support in PC-Pool~1)",
+    source: {
+      name: "X",
+      source: "https",
+    },
+    subtasks: [
+      {
+        id: 0, //use in JSX as key
+        title: "Adobe Illustrator - Learning by Doing",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Erstellen Sie mit AI eine Illustration/Ablaufgrafik zu einem der foglenden Themen:",
+          },
+          {
+            id: 1,
+            type: "list",
+            content: [
+              "http-request",
+              "Ablauf einer Turingmaschine",
+              "Interpreter vs. Compiler",
+              "Freies Thema"
+            ],
+          },
+          {
+            id: 2,
+            type: "text",
+            content:
+              "indem Sie den Prozess bzw. Sachverhalt bildlich erklären. Hierbei können Sie sich an dem Beispiel aus der Vorlesung oder den folgenden Illustrationen",
+          },
+          {
+            id: 3,
+            type: "code",
+            content: "Nebenläufigkeit am Beispiel Browser",
+          },
+          {
+            id: 4,
+            type: "img",
+            content: "..//assets/browser_overview_02.png",
+            alt: "Concurrency-Browser",
+          },
+          {
+            id: 5,
+            type: "text",
+            content:
+              "orientieren. Arbeiten Sie dabei mit den in der Übung vorgestellten Werkzeugen und Tutorialmaterial.",
+          },
+          {
+            id: 6,
+            type: "text",
+            content:
+              "Beachten Sie bei der Umsetzung der Grafik und der einzelnen Bestandteile folgende grundlegende Gestaltgesetze:",
+          },
+          {
+            id: 7,
+            type: "list",
+            content: [
+              "Ähnlichkeit: Ähnlichkeiten deuten Zusammengehörigkeit an (z.B. die Farbe Blau repräsentiert das WWW.)",
+              "Nähe: Objekte, die in Verbindung stehen, werden nah zueinander platziert (z.B. Tabs sind unter dem Symbol für das WWW abgebildet.)",
+              "Prägnanz: Abhebung eines einzelnen Objekts; kann Aufmerksamkeit implizieren.",
+              "Geschlossenheit: Mehrere Elemente werden als Einheit wahrgenommen (z.B. Gruppe Tabs).",
+              "Kontinuität: Linien oder Kurven werden durch unsere Informationsverarbeitung fortgesetzt.",
+              "Gemeinsame Region/Ausrichtung: Elemente in einer Region werden als Gruppe klassifiziert bzw. mehrere unterschiedliche Elemente, welche die gleiche"+
+              " Richtung annehmen, werden ebenfalls als zusammengehörig wahrgenommen (z.B. Gruppe Tabs Richtung Browser-Symbol.).",
+              "Verbundene Elemente: Verbundene Elemente werden als Einheit aufgefasst (z.B. Icon aus Mauszeiger und Hand).",
+            ],
+          },
+          {
+            id: 8,
+            type: "code",
+            content: "Beispiel Gestaltgesetz: Nähe schafft Informationskontext",
+          },
+          { id: 9, type: "img", content: "../assets/gg_example.png", alt: "" },
+        ],
+      },
+      {
+        id: 1, //use in JSX as key
+        title: "Typografie",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Wählen Sie geeignete Schriften für Ihre Illustration oder Ihr Logo aus. Wie begründen Sie die Verwendung Ihrer Auswahl? Orientieren Sie sich hier z.B. an",
+          },
+          { id: 1, type: "code", content: "Buch: Schrifttypen – Verstehen Kombinieren: Schriftmischung als Reiz in der Typografie, Philipp Stamm, Berlin, Boston: Birkhäuser, 2020. https://doi-org.ezproxy2.hsrw.eu/10.1515/9783035609011" },
+          {
+            id: 2,
+            type: "text",
+            content:
+              'Wir betrachten einen Mix aus verschiedenen Schriften an der aktuellen Darstellung in "Exercise 0". Welche Unterschiede, die Ihnen nun aus der Vorlesung bekannt sind, fallen Ihnen auf?',
+          }
+        
+        ],
+      },
+      {
+        id: 2, //use in JSX as key
+        title: "Adobe Illustrator - Logo Entwicklung*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Orientieren Sie sich an der Logo-Entwicklung aus der Vorlesung bzw. Übung, um ein Logo (Farbe, Form) für Ihre WunschApp anzufertigen.",
+          },
+          { id: 1, type: "img-small", content: "../assets/logo.svg", alt: "" },
+        ],
+      },
+    ],
   }
 ];
 

@@ -30,9 +30,9 @@ const StyledParagraph = styled.p`
   font-size: 0.8em;
   font-style: ${(props) => (props.type === "text" ? "normal" : "italic")};
   font-family: ${(props) =>
-    props.type === "code"
-      ? '"Courier New" monospace'
-      : '"Helvetica Neue" sans-serif'};
+    (props.type === "code"
+      ? "Courier New"
+      : "Helvetica")};
 
   & > a {
     font-size: 1em;
@@ -58,23 +58,29 @@ const StyledImg= styled.img`
   width:35%;
 `;
 
+const StyledImgSmall= styled.img`
+  margin-left: 1.2em;
+  width:20%;
+`;
+
 /*
 * return pure text or provide a link? a list? whatever
 * prototype
 * TODO: rework the datastructure wrt. to some build in editor
 *       for editing tasks
 *       adapt the component-generation wrt. the new datastructure or input-mask
-*
-* RECOM: use switch
+* 
+*       switch to switch-case
 */
 function ItemType({ item }) {
 
   if (item.type === "url") {
-    console.log(item.type);
     const link = <a href={item.content}>{item.name}</a>;
     return <StyledParagraph type={item.type}>{link}</StyledParagraph>;
   } else if (item.type === "img") {
     return <StyledImg src={item.content} alt={item.alt}></StyledImg>;
+  } else if (item.type === "img-small") {
+    return <StyledImgSmall src={item.content} alt={item.alt}></StyledImgSmall>;
   } else if (item.type === "list") {
     const listItems = item.content.map((entry, index) => (
       <li key={"li" + index}>{entry}</li>
@@ -84,6 +90,8 @@ function ItemType({ item }) {
     return <StyledParagraph type={item.type}>{item.content}</StyledParagraph>;
   }
 }
+
+
 
 
 /*
