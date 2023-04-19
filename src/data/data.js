@@ -151,7 +151,7 @@ export const exercises = [
     subtasks: [
       {
         id: 0, //use in JSX as key
-        title: "Adobe Illustrator - Learning by Doing",
+        title: "Adobe Illustrator - Learning by Doing*",
         done: false, // flag: did I solve it already?
         content: [
           {
@@ -254,6 +254,66 @@ export const exercises = [
               "Orientieren Sie sich an der Logo-Entwicklung aus der Vorlesung bzw. Übung, um ein Logo (Farbe, Form) für Ihre WunschApp anzufertigen.",
           },
           { id: 1, type: "img-small", content: "../assets/logo.svg", alt: "" },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3, //use in JSX as key
+    title: "Design via Prototyping",
+    subtitle:
+      "Deadline 8th May (with support in PC-Pool~1)",
+    source: {
+      name: "X",
+      source: "https",
+    },
+    subtasks: [
+      {
+        id: 0, //use in JSX as key
+        title: "Get started I",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              'Choose one Design-Tool (Adobe Xd, Figma) and walk throught the "Get started".',
+          },
+          {
+            id: 1,
+            type: "text",
+            content:
+              "In case you are working on a game, work with a corresponding engine or tool.",
+          }
+        ],
+      },
+      {
+        id: 1, //use in JSX as key
+        title: "Get started II*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content: "Workout a first Design of your project and take care of:",
+          },
+          {
+            id: 1,
+            type: "list",
+            content: [
+              "Aim",
+              "User-Stories",
+              "Information-Design",
+              "Navigation",
+              "Characters/Game-Story",
+            ],
+          },     
+          {
+            id: 2,
+            type: "text",
+            content:
+              'To get the "*" you need to investigate some effort into your chosen tool.',
+          }
         ],
       },
     ],
