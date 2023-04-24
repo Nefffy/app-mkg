@@ -295,7 +295,7 @@ export const exercises = [
           {
             id: 0,
             type: "text",
-            content: "Workout a first Design of your project and take care of:",
+            content: 'Workout a "first" Design-Version of your project and take care of:',
           },
           {
             id: 1,
@@ -312,10 +312,22 @@ export const exercises = [
             id: 2,
             type: "text",
             content:
-              'To get the "*" you need to investigate some effort into your chosen tool.',
+              'To get the "*" you need to investigate some effort into your chosen tool. Please send me the link (via Moodle-Submission) of your rudimentary design-version until 8th May.',
           }
         ],
       },
+      {
+        id: 2, //use in JSX as key
+        title: "Prototyping Transfer*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content: 'How to import an Adobe Xd Prototype into Figma? Create a simple example of a design including prototyping in Adobe Xd and transfer it to Figma incl. all your prototype links. You can demonstrate this in the exercises to get the (*).',
+          }
+        ],
+      }
     ],
   }
 ];
