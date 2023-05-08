@@ -11,6 +11,8 @@ import Task from ".//components/Task.js";
 import { exercises } from ".//data/data.js";
 
 
+//TODO add ** for next.js
+
 /*
  * To arrange the exercise-boxes at once:
  */

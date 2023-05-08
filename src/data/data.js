@@ -256,6 +256,20 @@ export const exercises = [
           { id: 1, type: "img-small", content: "../assets/logo.svg", alt: "" },
         ],
       },
+      {
+        id: 3, //use in JSX as key
+        title: "Adobe Illustrator (or alternatives) - Infinity sign*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Create an infinity sign, such that one part is in the background. Example coming soon.",
+          },
+       
+        ],
+      },
     ],
   },
   {
@@ -334,7 +348,7 @@ export const exercises = [
     id: 4, //use in JSX as key
     title: "Introduction to React",
     subtitle:
-      "Deadline is 22th May: discussion and preparation (with support in PC-Pool~1)",
+      "Deadline is 29th May: discussion and preparation (with support in PC-Pool~1)",
     source: {
       name: "X",
       source: "https",
@@ -476,6 +490,38 @@ export const exercises = [
       },
       {
         id: 3, //use in JSX as key
+        title:
+          "next.js**",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Get started with next.js. You can create your own inital app or rework the ExerciseApp.",
+          },
+          {
+            id: 1,
+            type: "url",
+            content: "https://nextjs.org/",
+            name: "next.js",
+          },
+          {
+            id: 2,
+            type: "text",
+            content:
+              'Hint: try to understand the terminology and file conventions; explained here:',
+          },
+          {
+            id: 3,
+            type: "url",
+            content: "https://nextjs.org/docs/app/building-your-application/routing",
+            name: "important stuff to know",
+          },
+        ],
+      },
+      {
+        id: 4, //use in JSX as key
         title:
           "Restyle your ExerciseApp*",
         done: false, // flag: did I solve it already?
