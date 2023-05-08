@@ -262,7 +262,7 @@ export const exercises = [
     id: 3, //use in JSX as key
     title: "Design via Prototyping",
     subtitle:
-      "Deadline 8th May (with support in PC-Pool~1)",
+      "Deadline 21th May (with support in PC-Pool~1)",
     source: {
       name: "X",
       source: "https",
@@ -312,7 +312,7 @@ export const exercises = [
             id: 2,
             type: "text",
             content:
-              'To get the "*" you need to investigate some effort into your chosen tool. Please send me the link (via Moodle-Submission) of your rudimentary design-version until 8th May.',
+              'To get the "*" you need to investigate some effort into your chosen tool. Please send me the link (via Moodle-Submission) of your rudimentary design-version until 21th May.',
           }
         ],
       },
@@ -328,6 +328,172 @@ export const exercises = [
           }
         ],
       }
+    ],
+  },
+  {
+    id: 4, //use in JSX as key
+    title: "Introduction to React",
+    subtitle:
+      "Deadline is 22th May: discussion and preparation (with support in PC-Pool~1)",
+    source: {
+      name: "X",
+      source: "https",
+    },
+    subtasks: [
+      {
+        id: 0, //use in JSX as key
+        title: "Add a component (recommended)*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Add a Checkbox to visualize if you have already done an exercise. This boxes should be placed next to each subtask and as a user you should be able to use them: once checked, this should be visibile if you restart your page. In addition, if all subtasks of an exercise are checked as solved, a checkmark should appear next to the exercise-header:",
+          },
+          { id: 1, type: "img", content: "../assets/addCheckbox.png", alt: "" },
+          {
+            id: 2,
+            type: "text",
+            content:
+              "Since all new pull-request will update the data.js file (you will pull for new exercises each week): How does these git-requests will effect your local version?",
+          },
+          {
+            id: 3,
+            type: "text",
+            content:
+              "At the beginning, work with",
+          },
+          {
+            id: 4,
+            type: "code",
+            content:
+              "localStorage",
+          },
+          {
+            id: 5,
+            type: "text",
+            content:
+              'to let your ExerciseApp remember the Checkbox states. What about writing the changes directly to the "data.js" with JavaScript?',
+          }
+        ],
+      },
+      {
+        id: 1, //use in JSX as key
+        title: "Add Usabilty - solving this task may take some time**",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Inserting a new task directly from the source code can be cumbersome. Add a button to the interface",
+          },
+          { id: 1, type: "code", content: "Add new Task" },
+          {
+            id: 2,
+            type: "text",
+            content:
+              'which offers the user the interface that provides the following functions: "Enter and save a new task in the data set". A click on this button links to a form that enables the creation of new tasks.',
+          },
+          {
+            id: 3,
+            type: "text",
+            content:
+              'HINT: to export content into files you should consider: https://www.npmjs.com/package/fs-browsers or consider the first option of the next subtask.',
+          },
+          {
+            id: 4,
+            type: "text",
+            content:
+              "Note, the form-elements should fit to the data structure of the ExerciseApp. Therefore, you have to consider the data-structure in file",
+          },
+          {
+            id: 5,
+            type: "code",
+            content:
+              "data.js",
+          },
+          {
+            id: 6,
+            type: "code",
+            content:
+              "which is readable by this small App and given by the following picture:",
+          },
+          {
+            id: 7,
+            type: "img",
+            content: "../assets/datastructure.png",
+            alt: "",
+          },
+          {
+            id: 8,
+            type: "text",
+            content: "For the subtasks, your formular needs to differentiate between the following content-types:",
+          },
+          {
+            id: 9,
+            type: "list",
+            content: ['text','url','img','code'],
+          },
+          {
+            id: 10,
+            type: "text",
+            content: "Recommended: First, you should create the requirements (user stories) for the Add New Exercise page. Then develope a prototype (user guidance and layout). After these steps you should start developing the site including its functionalities.",
+          }
+        ],
+      },
+      {
+        id: 2, //use in JSX as key
+        title:
+          "Mock Data, API Mocking*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "In early stage of your project, you need to define and structure your data.",
+          },
+          {
+            id: 1,
+            type: "text",
+            content:
+              "In case you do not have a real-data set, you need to work with so called Mock Data and there exist several ways to set up your data.",
+          },
+          {
+            id: 2,
+            type: "text",
+            content:
+              "Provide your data in one of the following ways or start a research on your own:",
+          },
+          {
+            id: 3,
+            type: "list",
+            content:["Create a server which simulates some API (usually a placeholder for backend database)","Fake-Api such as the REST Mock-Data Demo","json-server"],
+          }
+        ],
+      },
+      {
+        id: 3, //use in JSX as key
+        title:
+          "Restyle your ExerciseApp*",
+        done: false, // flag: did I solve it already?
+        content: [
+          {
+            id: 0,
+            type: "text",
+            content:
+              "Play around with styled-components to change the styles of the different react components.",
+          },
+          {
+            id: 1,
+            type: "text",
+            content:
+              "In case you rework the UI based on some arguments wrt. UX and create a complete new Layout, this subtask counts**",
+          }
+        ],
+      },
     ],
   }
 ];
