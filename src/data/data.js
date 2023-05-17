@@ -258,15 +258,16 @@ export const exercises = [
       },
       {
         id: 3, //use in JSX as key
-        title: "Adobe Illustrator (or alternatives) - Infinity sign*",
+        title: "Adobe Illustrator (or alternatives) - Infinity sign* (Deadline: 5th June)",
         done: false, // flag: did I solve it already?
         content: [
           {
             id: 0,
             type: "text",
             content:
-              "Create an infinity sign, such that one part is in the background. Example coming soon.",
+              "Create an infinity sign, such that one part is in the background. See example below:",
           },
+          { id: 1, type: "img", content: "../assets/infinity.png", alt: "" },
        
         ],
       },
@@ -348,7 +349,7 @@ export const exercises = [
     id: 4, //use in JSX as key
     title: "Introduction to React",
     subtitle:
-      "Deadline is 29th May: discussion and preparation (with support in PC-Pool~1)",
+      "Deadline is 5th June: discussion and preparation (with support in PC-Pool~1)",
     source: {
       name: "X",
       source: "https",
