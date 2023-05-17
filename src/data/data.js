@@ -268,7 +268,12 @@ export const exercises = [
               "Create an infinity sign, such that one part is in the background. See example below:",
           },
           { id: 1, type: "img", content: "../assets/infinity.png", alt: "" },
-       
+          {
+            id: 2,
+            type: "text",
+            content:
+              "Please submit the vector-file.",
+          },
         ],
       },
     ],
