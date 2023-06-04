@@ -18,7 +18,7 @@ import { exercises } from ".//data/data.js";
  */
 const StyledDiv = styled.div`
   border-radius: 3px;
-  background-color: #282c34;
+  background-color: #1f1b05;
   margin: 0.5em 0.5em;
   padding: 0.5em 1em;
   color: white;
@@ -28,7 +28,7 @@ const StyledDiv = styled.div`
  * Just a styled version of h4
  */
 const StyledH4 = styled.h4`
-  color: #17a934;
+  color: #ffae00;
   margin-left: 0.5em;
   font-size: 0.8em;
   font-style: "italic";

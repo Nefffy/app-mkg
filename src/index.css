@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:  #72eb7a;
+  background-color:  #fac000;
 }
 
 code {
@@ -21,6 +21,6 @@ code {
 }
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
