@@ -20,8 +20,8 @@ const StyledDiv = styled.div`
   border-radius: 3px;
   background-color: #1f1b05;
   margin: 0.5em 0.5em;
-  padding: 0.5em 1em;
-  color: white;
+  padding: 1em 1em;
+  color: yellow;
 `;
 
 /*
@@ -30,11 +30,19 @@ const StyledDiv = styled.div`
 const StyledH4 = styled.h4`
   color: #ffae00;
   margin-left: 0.5em;
-  font-size: 0.8em;
-  font-style: "italic";
+  padding: 1em 1em;
+  font-size: 1.6em;
+  font-style: "bolt";
   font-family: "Helvetica Neue" sans-serif;
 `;
-
+const StyledCheckbox = styled.div`
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: grey ;
+  border-radius: 3px;
+  transition: all 150ms;
+ `;
 /*
  * TaskArea represents content-area
  * and wrt. this app, the contents of a Task are given as
@@ -76,6 +84,9 @@ function App() {
   if(list.length===0)setList(exercises);
 
 
+
+ 
+
   /*
    * for each exercise we create a title and task-area named TaskArea
    * all wrapped within a styled div
@@ -88,23 +99,29 @@ function App() {
    */
   const listItems = list.map((exe) => (
     <StyledDiv key={exe.id}>
-      <h2>
+      <h2> 
         Exercise {exe.id}: {exe.title}{" "}
         {exe.subtasks.every((currentExe) => currentExe.done) && "✔"}
       </h2>
+      <div>
+      <input type="checkbox" />
+    </div>
       {exe.subtitle ? <StyledH4>{exe.subtitle}</StyledH4> : ""}
 
       <TaskArea
+      
         subtasks={exe.subtasks}
         superTaskId={exe.id}
       ></TaskArea>
     </StyledDiv>
+    
   ));
   return (
     <div className="App">
       <header className="App-header">
         <h1>Welcome to the exercises of MKG - 2023</h1>
         <p>
+          
           This ExerciseApp is based on the initial project you can get via
           create-react-app and is extended by Christina Mika-Michalski
         </p>
@@ -114,8 +131,10 @@ function App() {
         </p>
         <p>Surprise: some exercises will adress gaps within this version.</p>
       </header>
-      <main>{listItems}</main>
+      <main>{listItems}
+      </main>
     </div>
+    
   );
 }
 

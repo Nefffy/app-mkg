@@ -9,7 +9,7 @@ export const exercises = [
     },
     subtasks: [
       {
-        id: 0, //use in JSX as key
+        id: 0, //use in JSX as key //test
         title: "Get the project",
         done: false, // flag: did I solve it already?
         content: [
@@ -53,6 +53,7 @@ export const exercises = [
     ],
   },
   {
+    
     id: 1, //use in JSX as key
     title: "Introduction to MKG",
     subtitle: "",
@@ -526,6 +527,7 @@ export const exercises = [
           },
         ],
       },
+      
       {
         id: 4, //use in JSX as key
         title:

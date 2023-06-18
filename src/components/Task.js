@@ -36,16 +36,16 @@ const StyledParagraph = styled.p`
 
   & > a {
     font-size: 1em;
-    color: #539b6c;
+    color: #41e600;
     text-decoration: none;
   }
   & > a:hover {
-    color: #6feb10;
+    color: #41e600;
   }
 `;
 
 const StyledUl = styled.ul`
-  color: #17a934;
+  color: #41e600;
   margin-left: 1.2em;
   padding: 1em 1em;
   font-size: 0.8em;
@@ -55,7 +55,8 @@ const StyledUl = styled.ul`
 
 const StyledImg= styled.img`
   margin-left: 1.2em;
-  width:35%;
+  width:35%;^
+  color: #41e600;
 `;
 
 const StyledImgSmall= styled.img`
